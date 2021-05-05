@@ -1,0 +1,8 @@
+.lyrics {
+    white-space: pre;
+}
+
+.noLyrics {
+    vertical-align: middle;
+    line-height: 100%;
+}

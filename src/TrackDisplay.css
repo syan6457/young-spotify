@@ -1,0 +1,15 @@
+.trackItem {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.titleAndArtist {
+    margin-left: 20px;
+}
+
+.trackItem:hover {
+    cursor: pointer;
+}

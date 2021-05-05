@@ -1,0 +1,6 @@
+.playerContainer{
+    position: fixed;
+    bottom: 0;
+    height: 52px;
+    width: 100%;
+}
