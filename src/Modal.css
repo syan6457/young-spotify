@@ -1,6 +1,6 @@
 .modalContainer {
     position: fixed;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
@@ -26,7 +26,7 @@
 
 .modalCloseButton {
     position: relative;
-    left: 85%;
+    left: 93%;
     font-size: large;
     padding: 30px;
     padding-top: 15px;
@@ -43,7 +43,7 @@
 
 .nextQuestionButton {
     position: relative;
-    left: 82%;
+    left: 92%;
     font-size: large;
     padding: 34px;
     padding-top: 15px;
@@ -56,4 +56,14 @@
     cursor: pointer;
     background-color: darkgray;
     color: #fff;
+}
+
+.scoreDisplay {
+    background: none;
+    border: none;
+    position: relative;
+    font-size: x-large;
+    color: #fff;
+    text-align: center;
+    top: 4vh;
 }
