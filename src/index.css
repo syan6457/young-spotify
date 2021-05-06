@@ -1,4 +1,10 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.darkMode {
+    color:lightgray;
+    background-color: #191414;
 }

@@ -127,17 +127,24 @@ function MicIcon({mic}){
 // remaking the button for positoning purposes
 // the mic icons have different widths
 function MicButton({ mic, handleMicButton}){
-    if (mic){
-        return(
-            <button type='button' className='micButton' onClick={handleMicButton}>
-                <MicIcon mic={mic} />
-            </button>
-        )
-    } else {
-        return(
-            <button type='button' className='micSlashButton' onClick={handleMicButton}>
-                <MicIcon mic={mic} />
-            </button>
-        )
-    }
+    // if (mic){
+    //     return(
+    //         <button type='button' className='micButton' onClick={handleMicButton}>
+    //             <MicIcon mic={mic} />
+    //         </button>
+    //     )
+    // } else {
+    //     return(
+    //         <button type='button' className='micSlashButton' onClick={handleMicButton}>
+    //             <MicIcon mic={mic} />
+    //         </button>
+    //     )
+    // }
+
+    // WebSpeech API's stop() not currently working
+    return (
+        <button type='button' className='micButton' onClick={handleMicButton}>
+            <MicIcon mic={true} />
+        </button>
+    )
 }

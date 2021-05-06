@@ -10,10 +10,14 @@ function Dashboard(props) {
     const accessToken = SpotifyAuth(props.code);
     const [playing, setPlaying] = useState();
 
+    function toggleTheme(){
+
+    }
+
     return (
-        <div>
+        <div className='dashBoard'>
             <div className='columns'>
-                <Sidebar playing={playing}/>
+                <Sidebar playing={playing} toggleTheme={toggleTheme}/>
                 <Body accessToken={accessToken} setPlaying={setPlaying}/>
             </div>
             <Player accessToken={accessToken} trackUris={playing?.uri}/>
