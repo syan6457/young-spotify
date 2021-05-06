@@ -5,6 +5,7 @@ import TrackDisplay from './TrackDisplay';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMicrophone, faMicrophoneSlash} from '@fortawesome/free-solid-svg-icons'; 
 
+// Spotify API wrapper for searching and music playback
 const SpotifyApi = new SpotifyWebApi({
     clientId: '8fdd97d3ea674907a02f38f39f755391'
 })
@@ -21,7 +22,6 @@ function Body({accessToken, setPlaying}) {
     // letting Dashboard know a track is set to be played
     function selectTrack(track){
         setPlaying(track);
-        //setSearch();
     }
 
     // search Spotify once the searchbar input changes
@@ -56,6 +56,7 @@ function Body({accessToken, setPlaying}) {
     let speech = null;
     let transcript = '';
 
+    // Web Speech API interacting with searchbar
     if (window.webkitSpeechRecognition){
         speech = new window.webkitSpeechRecognition();
         // speech.continuous = true;

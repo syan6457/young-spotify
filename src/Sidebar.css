@@ -3,6 +3,7 @@
     height: 93vh;
     margin-top: 15px;
     margin: 10px;
+    position: relative;
 }
 
 .lyricsContainer {
@@ -23,7 +24,7 @@
 
 .toggleButton{
 	left: 2%;
-	top: 2.5%;;
+	top: 2.25%;
 	position: absolute;
     border-radius: 30px;
     background-color: none;
@@ -34,4 +35,28 @@
 
 .toggleButton:hover{
     cursor: pointer;
+    color:whitesmoke;
+    background-color: darkgray;
+}
+
+.modalButtonContainer {
+    position: relative;
+    left: 15%;
+    top: 26%;
+    width: 50%;
+}
+
+.modalButton:hover {
+    cursor: pointer;
+    color:whitesmoke;
+    background-color: darkgray;
+}
+
+.modalButton {
+    border: whitesmoke 2px;
+    padding: 4%;
+    width: 75%;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #eee;
 }

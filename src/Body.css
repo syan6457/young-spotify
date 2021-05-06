@@ -1,6 +1,7 @@
 .dBody {
     flex: 0.6;
     height: 95vh;
+    position: relative;
 }
 
 .display {
@@ -20,6 +21,9 @@
     padding: 10px;
     font-size: larger;
 }
+.searchBar:hover{
+    transform: scale(1.01);
+}
 
 .searchBarContainer{
     margin: 10px;
@@ -34,7 +38,7 @@
 }
 
 .micButton{
-	right: 4%;
+	right: 5%;
 	top: 3%;
 	position:absolute;
     background: none;
@@ -42,7 +46,7 @@
 }
 
 .micSlashButton{
-    right: 3.4%;
+    right: 4.4%;
 	top: 3%;
 	position:absolute;
     background: none;

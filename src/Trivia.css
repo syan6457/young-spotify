@@ -1,0 +1,105 @@
+.triviaDisplay {
+    height: 78vh;
+    border-radius: 5px;
+    border: none;
+}
+
+.choicesContainer {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+}
+
+.choicesTop {
+    display: flex;
+    height: 50%;
+    margin-top: 2%;
+}
+
+.choicesBot {
+    display: flex;
+    height: 50%;  
+    margin-bottom: 1%;
+}
+
+.answerOne {
+    width: 40%;
+    height: 40%;
+    margin: 2%;
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+    font-size: medium;
+    border: none;
+    border-radius: 30px;
+}
+.answerTwo {
+    width: 40%;
+    height: 40%;
+    margin: 2%;
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+    font-size: medium;
+    border: none;
+    border-radius: 30px;
+}
+.answerThree {
+    width: 40%;
+    height: 40%;
+    margin: 2%;
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+    font-size: medium;
+    border: none;
+    border-radius: 30px;
+}
+.answerFour {
+    width: 40%;
+    height: 40%;
+    margin: 2%;
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+    font-size: medium;
+    border: none;
+    border-radius: 30px;
+}
+.answerOne:hover{
+    color:whitesmoke;
+    background-color: darkgray;
+    transform: scale(1.05);
+}
+.answerTwo:hover{
+    color:whitesmoke;
+    background-color: darkgray;
+    transform: scale(1.05);
+}
+.answerThree:hover{
+    color:whitesmoke;
+    background-color: darkgray;
+    transform: scale(1.05);
+}
+.answerFour:hover{
+    color:whitesmoke;
+    background-color: darkgray;
+    transform: scale(1.05);
+}
+
+.questionContainer{
+    display: grid;
+    place-items: center;
+}
+
+.triviaQuestion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+    font-size: large;
+    width: 60%;
+    height: 20vh;
+    margin: 5%;
+    border-radius: 30px;
+}

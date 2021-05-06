@@ -1,0 +1,59 @@
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 45px;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    background-color: black;
+    z-index: 1;
+}
+
+.modalBox {
+    position: relative;
+    height: 78vh;
+    width: 150vh;
+}
+
+.modalCloseButton {
+    position: relative;
+    left: 85%;
+    font-size: large;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border: none;
+}
+.modalCloseButton:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: #fff;
+}
+
+.nextQuestionButton {
+    position: relative;
+    left: 82%;
+    font-size: large;
+    padding: 34px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border: none;
+}
+.nextQuestionButton:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: #fff;
+}

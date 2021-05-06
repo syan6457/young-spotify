@@ -4,12 +4,16 @@ import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
-function Sidebar({playing}) {
+// left portion of the dashboard
+function Sidebar({ playing, handleModalOpen}) {
     return (
         <div className='dSidebar'>
             <div className='topbarContainer'>
                 <div className='toggleContainer'>
                     <button className='toggleButton'><FontAwesomeIcon className='toggleIcon' icon={faAdjust} onClick={toggle}/></button>
+                </div>
+                <div className='modalButtonContainer'>
+                    <button className='modalButton' onClick={handleModalOpen}>Challenge a music trivia</button>
                 </div>
             </div>
             <div className='lyricsContainer'><Lyrics playing={playing}/></div> 
@@ -19,6 +23,7 @@ function Sidebar({playing}) {
 
 export default Sidebar;
 
+// Light/Dark mode toggle 
 function toggle(){
     const body = document.querySelector('body');
 
