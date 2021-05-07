@@ -26,11 +26,6 @@ function SpotifyAuth(code) {
             setExpiresIn(res.data.expiresIn);
         }).catch((err) => {
             // redirects to root (login page) if any error occured when contacting the Spotify Web Api 
-
-
-            console.log(err);
-
-
             window.location = '/';
         })
     }, [code]);
@@ -55,11 +50,6 @@ function SpotifyAuth(code) {
                 setExpiresIn(res.data.expiresIn);
             }).catch((err) => {
                 // redirects to root (login page) if any error occured when contacting the Spotify Web Api 
-
-
-                console.log(err);
-
-
                 window.location = '/';
             })
         }, (expiresIn - 60)*1000); 
