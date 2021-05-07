@@ -1,6 +1,20 @@
-Class project
+Class project\
+  This project is made possible by many npm packages
 
-More descriptions to be added
+***
 
-The backend is a simple express server that handles Spotify login and refresh.
-Due to the use of the client secrete, the backend code is not made available.
+Special Thanks to
+
+  Spotify Web API\
+  Lyrics.ovh\
+  Open Trivia DB\
+  Web Speech API\
+
+***
+
+The backend is a simple express server that handles Spotify login and token refresh.
+
+***
+
+A proper read.me to be added
+
