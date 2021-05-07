@@ -12,23 +12,25 @@ function SpotifyAuth(code) {
         
         axios({
             method: 'post',
-            url: 'https://young-spotify-server.vercel.app/login',
+            // url: 'http://localhost:3000'
+            url: 'https://young-spotify-server.vercel.app/api/login',
             data:{
                 code: code
             }
         }).then(res => {
             // removes the code from the url
-            
-            //window.history.pushState({}, null, '/');
+            window.history.pushState({}, null, '/');
 
             setAcessToken(res.data.accessToken);
             setRefreshToken(res.data.refreshToken);
             setExpiresIn(res.data.expiresIn);
         }).catch((err) => {
             // redirects to root (login page) if any error occured when contacting the Spotify Web Api 
-            
+
+
             console.log(err);
-           
+
+
             window.location = '/';
         })
     }, [code]);
@@ -40,22 +42,24 @@ function SpotifyAuth(code) {
             // refreshing happens 1 minute before the token expires
             axios({
                 method: 'post',
-                url: 'https://young-spotify-server.vercel.app/refresh',
+                // url: 'http://localhost:3000'
+                url: 'https://young-spotify-server.vercel.app/api/refresh',
                 data: {
                     refreshToken: refreshToken
                 }
             }).then(res => {
                 // removes the code from the url
-                
-                //window.history.pushState({}, null, '/');
+                window.history.pushState({}, null, '/');
 
                 setAcessToken(res.data.accessToken);
                 setExpiresIn(res.data.expiresIn);
             }).catch((err) => {
                 // redirects to root (login page) if any error occured when contacting the Spotify Web Api 
-                
+
+
                 console.log(err);
-                
+
+
                 window.location = '/';
             })
         }, (expiresIn - 60)*1000); 
