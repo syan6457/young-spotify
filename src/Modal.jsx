@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Modal.css';
 import Trivia from './Triva';
 import getTrivias from './triviaQs.js';
@@ -34,7 +34,7 @@ function Modal({ openModal, handleModalClose }) {
     }
 
     function handleNext(){
-        if (questionIndex == 50){
+        if (questionIndex === 50){
             resetQuestions();
         } else {
             updateQuestionIndex();

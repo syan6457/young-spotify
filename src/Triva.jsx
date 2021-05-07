@@ -7,7 +7,7 @@ function Triva({trivias, updateTriviaScore, questionIndex, updateQuestionIndex})
     //             choices: array[4]}
     const [message, setMessage] = useState('Good Luck Have Fun');
 
-    if (questionIndex == 50) {
+    if (questionIndex === 50) {
         setMessage("You've completed the trivia challenge. Click Next to restart or click Close to leave the game.")
 
         return(
@@ -38,7 +38,7 @@ function Triva({trivias, updateTriviaScore, questionIndex, updateQuestionIndex})
         const question = trivia.question;
 
         function handleQuestionAnswer(e){
-            if (e.target.dataset.choice == correctAnswer){
+            if (e.target.dataset.choice === correctAnswer){
                 setMessage('You were correct. Well done.');
                 updateTriviaScore();
             } else {

@@ -11,7 +11,7 @@ async function getTriviaQs() {
     let q = [];
 
     // on a successful GET request
-    if (result.data.response_code == 0){
+    if (result.data.response_code === 0){
         q = result.data.results.map((q) => {
             // decoding the base64 encoded correct answer
             const correctAnswer = atob(q.correct_answer);
