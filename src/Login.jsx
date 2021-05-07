@@ -18,9 +18,8 @@ function Login(props) {
     return (
         <div className='login'>
             <img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png' alt='Spotify Logo White' width='50%'></img>
-            <a id='loginButton' className='button' href={auth_url}>
-                Login to Spotify
-            </a>
+            <a id='loginButton' className='button' href={auth_url}>Login to Spotify</a>
+            <p id='label'>A Spotify Premium Account is required to use this app</p>
         </div>
     );
 }
