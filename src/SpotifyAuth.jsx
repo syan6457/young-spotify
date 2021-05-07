@@ -12,7 +12,7 @@ function SpotifyAuth(code) {
         
         axios({
             method: 'post',
-            url: 'http://localhost:3001/login',
+            url: 'https://young-spotify-server.vercel.app/login',
             data:{
                 code: code
             }
@@ -36,7 +36,7 @@ function SpotifyAuth(code) {
             // refreshing happens 1 minute before the token expires
             axios({
                 method: 'post',
-                url: 'http://localhost:3001/refresh',
+                url: 'https://young-spotify-server.vercel.app/refresh',
                 data: {
                     refreshToken: refreshToken
                 }
