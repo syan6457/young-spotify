@@ -3,7 +3,8 @@ Class project\
 
 ***
 
-API's used:\
+Special Thanks to
+
   Spotify Web API\
   Lyrics.ovh\
   Open Trivia DB\
