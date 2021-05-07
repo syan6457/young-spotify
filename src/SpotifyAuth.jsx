@@ -18,14 +18,17 @@ function SpotifyAuth(code) {
             }
         }).then(res => {
             // removes the code from the url
-            window.history.pushState({}, null, '/');
+            
+            //window.history.pushState({}, null, '/');
 
             setAcessToken(res.data.accessToken);
             setRefreshToken(res.data.refreshToken);
             setExpiresIn(res.data.expiresIn);
         }).catch((err) => {
             // redirects to root (login page) if any error occured when contacting the Spotify Web Api 
+            
             console.log(err);
+           
             window.location = '/';
         })
     }, [code]);
@@ -43,13 +46,16 @@ function SpotifyAuth(code) {
                 }
             }).then(res => {
                 // removes the code from the url
-                window.history.pushState({}, null, '/');
+                
+                //window.history.pushState({}, null, '/');
 
                 setAcessToken(res.data.accessToken);
                 setExpiresIn(res.data.expiresIn);
             }).catch((err) => {
                 // redirects to root (login page) if any error occured when contacting the Spotify Web Api 
+                
                 console.log(err);
+                
                 window.location = '/';
             })
         }, (expiresIn - 60)*1000); 
