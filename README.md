@@ -27,7 +27,7 @@ As required by Spotify, using this App requires a valid Spotify Premium Account
   - Read more about it [here](https://opentdb.com/)
 
 # Backend
-The backend is a simple express server that handles the app's authentication with Spotify (separate from user login). A backend is required because the chosen Spotify authorization flow involes the use of a client secrete obtained when registering the app on Spotify. The backend is hosted as serverless functions and is availble in a separate repo.
+The backend is a simple express server that handles the app's authentication with Spotify (separate from user login). A backend is required because the chosen Spotify authorization flow involes the use of a client secrete obtained when registering the app on Spotify. The backend is hosted as serverless functions and is availble in a separate [repo](https://github.com/syan6457/young-spotify-server).
 
 # Other information
 Frontend framework: React
