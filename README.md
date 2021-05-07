@@ -1,15 +1,19 @@
-Class project
-  This project is made possible by many npm packages 
+Class project\
+  This project is made possible by many npm packages
 
-API's used:
-  Spotify Web API
-  Lyrics.ovh
-  Open Trivia DB
-  Web Speech API
+***
+
+API's used:\
+  Spotify Web API\
+  Lyrics.ovh\
+  Open Trivia DB\
+  Web Speech API\
+
+***
 
 The backend is a simple express server that handles Spotify login and token refresh.
 
-
+***
 
 A proper read.me to be added
 
