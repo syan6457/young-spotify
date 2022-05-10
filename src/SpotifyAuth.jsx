@@ -54,7 +54,7 @@ function SpotifyAuth(code) {
             })
         }, (expiresIn - 60)*1000); 
 
-        // cancels timeout if 
+        // cancels timeout when refreshToken or expireseIn changes
         return () => clearTimeout(refresh);
     }, [refreshToken, expiresIn])
 
