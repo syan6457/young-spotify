@@ -23,7 +23,7 @@ function Triva({trivias, updateTriviaScore, questionIndex, updateQuestionIndex})
                     </div>
                 </div>
                 <div className='questionContainer'>
-                    <div className='triviaQuestion'>Q</div>
+                    <div className='triviaQuestion'>Question</div>
                 </div>
                 <div className='messageDisplay'>{message}</div>
             </div>
@@ -38,7 +38,7 @@ function Triva({trivias, updateTriviaScore, questionIndex, updateQuestionIndex})
         const question = trivia.question;
 
         function handleQuestionAnswer(e){
-            if (e.target.dataset.choice === correctAnswer){
+            if (e.target.dataset.choice === e.target.dataset.answer){
                 setMessage('You were correct. Well done.');
                 updateTriviaScore();
             } else {
@@ -52,12 +52,12 @@ function Triva({trivias, updateTriviaScore, questionIndex, updateQuestionIndex})
                 <div className='messageDisplay'>{message}</div>
                 <div className='choicesContainer'>
                     <div className='choicesTop'>
-                        <button className='answerOne' data-choice={1} onClick={handleQuestionAnswer}>{answer1}</button>
-                        <button className='answerTwo' data-choice={2} onClick={handleQuestionAnswer}>{answer2}</button>
+                        <button className='answerOne' data-choice={1} data-answer={correctAnswer} onClick={handleQuestionAnswer}>{answer1}</button>
+                        <button className='answerTwo' data-choice={2} data-answer={correctAnswer} onClick={handleQuestionAnswer}>{answer2}</button>
                     </div>
                     <div className='choicesBot'>
-                        <button className='answerThree' data-choice={3} onClick={handleQuestionAnswer}>{answer3}</button>
-                        <button className='answerFour' data-choice={4} onClick={handleQuestionAnswer}>{answer4}</button>
+                        <button className='answerThree' data-choice={3} data-answer={correctAnswer} onClick={handleQuestionAnswer}>{answer3}</button>
+                        <button className='answerFour' data-choice={4} data-answer={correctAnswer} onClick={handleQuestionAnswer}>{answer4}</button>
                     </div>
                 </div>
                 <div className='questionContainer'>
